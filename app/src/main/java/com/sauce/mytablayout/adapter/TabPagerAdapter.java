@@ -1,8 +1,15 @@
-package com.sauce.mytablayout;
+package com.sauce.mytablayout.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+
+import com.sauce.mytablayout.frag.TabFragment1;
+import com.sauce.mytablayout.frag.TabFragment2;
+import com.sauce.mytablayout.frag.TabFragment3;
+import com.sauce.mytablayout.frag.TabFragment4;
+import com.sauce.mytablayout.frag.TabFragment5;
+import com.sauce.mytablayout.frag.TabFragment6;
 
 /**
  * Created by Junyoung on 2016-06-23.
@@ -32,7 +39,22 @@ public class TabPagerAdapter extends FragmentStatePagerAdapter {
             case 2:
                 TabFragment3 tabFragment3 = new TabFragment3();
                 return tabFragment3;
+
+            case 3:
+                TabFragment4 tabFragment4 = new TabFragment4();
+                return tabFragment4;
+
+            case 4:
+                TabFragment5 tabFragment5 = new TabFragment5();
+                return tabFragment5;
+
+            case 5:
+                TabFragment6 tabFragment6 = new TabFragment6();
+                return tabFragment6;
             default:
+
+
+
                 return null;
         }
     }
